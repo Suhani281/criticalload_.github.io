@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Critical Load Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="calculator">
+    <h2>Critical Load Calculator</h2>
+    <label for="material">Young's Modulus (E):</label>
+    <input type="number" id="material" placeholder="Enter Young's Modulus">
+
+    <label for="area">Cross-sectional Area (A):</label>
+    <input type="number" id="area" placeholder="Enter Cross-sectional Area">
+
+    <label for="length">Column Length (L):</label>
+    <input type="number" id="length" placeholder="Enter Column Length">
+
+    <button onclick="calculate()">Calculate</button>
+
+    <h3>Critical Load (P<sub>cr</sub>): <span id="result"></span></h3>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
